@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&family=Karla:wght@300&family=Noto+Sans:ital@1&family=Open+Sans:wght@600&family=Oswald&family=Poppins:wght@500&family=Raleway:wght@400;600;800&family=Ubuntu:wght@300;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* common style */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.hilight-color {
+    color: #FF008E;
+}
+
+.primary-btn {
+    background-color: #FF008E;
+    font-weight: bold;
+    font-size: 20px;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 18px;
+    box-shadow: 0 8px 0 #b6156d;
+    position: relative;
+    top: 0;
+}
+
+.primary-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.primary-btn:active {
+    box-shadow: 0 4px 0 #b6156d;
+    top: 5px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 1px solid #FF008E;
+    margin: 60px 0;
+}
+
+
+/* common style end*/
+
+
+/* nav style */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.navigation li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+
+/* header styles  */
+
+.header-section {
+    background-image: url('../images/cloud.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    background-color: rgb(0, 0, 0, .6);
+    background-blend-mode: overlay;
+}
+
+
+/* banner styles  */
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 500px;
+}
+
+.left-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-banner h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.left-banner p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 1.8;
+    margin-top: 18px;
+    font-weight: 300;
+}
+
+.right-banner {
+    display: flex;
+    justify-content: content;
+    align-items: flex-end;
+    margin-top: 463px;
+}
+
+.right-banner img {
+    width: 100%;
+}
+
+
+/* banner styles  end*/
+
+
+/* about style */
+
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-about {
+    width: 500px;
+}
+
+.left-about h2 {
+    font-size: 26px;
+    color: #FF008E;
+}
+
+.left-about p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 16px 0;
+}
+
+.left-about a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #FF008E;
+    font-weight: 300;
+}
+
+.rigth-about {
+    width: 500px;
+}
+
+.rigth-about img {
+    width: 100%;
+}
+
+
+/* feature style  */
+
+.feature-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-icon {
+    background-color: #FF008E;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.fa-book,
+.fa-video,
+.fa-star,
+.fa-lock {
+    font-size: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #FF008E;
+    margin-top: 7px;
+}
+
+.card p {
+    font-size: 16px;
+    color: rgb(20, 20, 20);
+    line-height: 1.5;
+    margin: 10px 0;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #FF008E;
+    font-weight: 300;
+}
+
+
+/* feature style end */
