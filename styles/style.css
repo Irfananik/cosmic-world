@@ -5,12 +5,16 @@
     box-sizing: border-box;
 }
 
-
-/* common style */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Ubuntu', sans-serif;
 }
+
+
+/* common style */
 
 .container {
     max-width: 1200px;
@@ -250,3 +254,222 @@ body {
 
 
 /* feature style end */
+
+
+/* gallery style  */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+}
+
+.photo {
+    position: relative;
+    border: 1px solid #FF008E;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.photo-text {
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    display: none;
+}
+
+.photo-text p {
+    text-align: center;
+    font-size: 30px;
+    color: #a0055a;
+    font-weight: bold;
+}
+
+.photo:hover .photo-text {
+    display: block;
+}
+
+.photo img:hover {
+    cursor: pointer;
+    filter: blur(8px);
+}
+
+.photo:hover {
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
+
+
+/* gallery style end */
+
+
+/* contact style */
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px;
+}
+
+.left-contact img {
+    width: 100%;
+}
+
+.rigth-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filled-input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 300;
+    outline: 0;
+    border: 1px solid #FF008E;
+}
+
+
+/* contact style end*/
+
+footer {
+    margin-top: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+
+/* responsive with media queries */
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    /* header style */
+    .header-section {
+        height: 820px;
+    }
+    .header-logo {
+        position: relative;
+        left: 40px;
+    }
+    /* nav style */
+    .nav {
+        display: block;
+    }
+    .navigation {
+        display: block;
+        position: relative;
+        left: 100px;
+    }
+    .navigation li {
+        margin-top: 20px;
+    }
+    /* banner styles */
+    .banner {
+        display: block;
+    }
+    .left-banner {
+        position: relative;
+        left: 20px;
+        top: 50px;
+    }
+    .left-banner h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1.1;
+    }
+    .right-banner {
+        display: none;
+    }
+    /* about style */
+    .about-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .left-about {
+        width: 320px;
+    }
+    .rigth-about {
+        width: 320px;
+        position: relative;
+        top: 36px;
+        left: 20px;
+    }
+    .rigth-about img {
+        width: 100%;
+    }
+    /* feature style */
+    .feature-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        justify-content: center;
+    }
+    /* gallery style */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 32px;
+    }
+    /* contact styles */
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 32px;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    /* banner style */
+    .right-banner img {
+        width: 100%;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+    /* about style */
+    .about-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .left-about {
+        width: 420px;
+        position: relative;
+        left: 160px;
+    }
+    .rigth-about {
+        width: 420px;
+        position: relative;
+        top: 36px;
+        left: 160px;
+    }
+    .rigth-about img {
+        width: 100%;
+    }
+    /* gallery style */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 32px;
+    }
+}
